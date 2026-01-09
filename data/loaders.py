@@ -1,5 +1,11 @@
 # data/loaders.py
+##################################
+# Charger un CSV OHLCV
 
+# Vérifier le format minimal
+
+# Retourner un pd.DataFrame propre
+###################################
 from pathlib import Path
 import pandas as pd
 
