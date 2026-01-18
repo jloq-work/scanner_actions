@@ -1,11 +1,11 @@
 # Scanner — Actions françaises
 
-Scanner simple et robuste d’actions françaises éligibles construit en Python.
+Scanner simple et robuste d’actions françaises construit en Python.
 
 L’objectif du projet est **pédagogique et pratique** :
 
 * montrer une architecture propre de pipeline data / calculs / signaux
-* proposer un scanner *simple*, explicable et testable
+* proposer un scanner simple, explicable et testable
 * rester compatible avec des données **gratuites** (Yahoo Finance)
 
 Ce projet **ne constitue pas un conseil en investissement**.
@@ -19,7 +19,7 @@ Le scanner cherche à détecter des **situations de transition** :
 > Actions françaises qui ont été **en baisse ou en range à moyen terme**,
 > mais qui montrent une **reprise récente** accompagnée d’une **accélération des volumes**.
 
-C’est typiquement le type de configuration exploitable sur les actions côtées en Service de réglement différé :
+C’est typiquement le type de configuration exploitable sur les actions côtées en Service de réglement différé (SRD) :
 
 * timing court / moyen terme
 * besoin de liquidité
@@ -122,7 +122,7 @@ Les volumes sont systématiquement convertis en numérique (`pd.to_numeric`).
 
 Classification basée sur les rendements :
 
-* **down**   : pression baissière
+* **down**   : tendance baissière
 * **stable** : absence de direction claire (range)
 
 Le scanner actions **ne retient que** :
@@ -161,7 +161,7 @@ Par défaut :
 seuil = 1.15
 ```
 
-La reprise doit être **accompagnée de volume**.
+La reprise doit être **accompagnée de volumes**.
 
 ---
 
