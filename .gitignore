@@ -22,7 +22,7 @@ htmlcov/
 # =========================
 # Data / Outputs
 # =========================
-data/
+#data/
 outputs/
 *.csv
 *.parquet
