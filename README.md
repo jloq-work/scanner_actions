@@ -187,6 +187,12 @@ Les tests :
 
 ---
 
+## Installation
+
+```bash
+pip install -r requirements.txt
+```
+
 ## Exécution (lancer deux fois à l'initialisation)
 
 ```bash
